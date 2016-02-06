@@ -1,0 +1,22 @@
+<div class="panel-body">
+  <table style="width:80%; margin: 0 auto;" class="table table-striped">
+    <tr>
+      <th>date</th>
+      <th>from</th>
+      <th>from value</th>
+      <th>To</th>
+      <th>to value</th>
+      <th>Input Value</th>
+      <th>Output Value</th>
+    </tr>
+    <tr ng-repeat="transaction in transactions">
+      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.fromName }}</td>
+      <td>{{ transaction.fromValue }}</td>
+      <td>{{ transaction.toName }}</td>
+      <td>{{ transaction.toValue }}</td>
+      <td>{{ transaction.inputAmount }}</td>
+      <td>{{ transaction.outputAmount }}</td>
+    </tr>
+  </table>
+</div>

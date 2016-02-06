@@ -1,0 +1,46 @@
+.main-div{
+  display: block;
+  background-color: red;
+  border-radius: 5px;
+  width: 25em;
+  /*margin: 0 auto;*/
+  margin: 5em auto 0px auto;
+}
+
+.value-label{
+  width: 20%;
+  display: inline-block;
+}
+
+.value-input{
+  width: 75%;
+  display: inline-block;
+}
+
+.listbox-group{
+  display: block;
+  margin: 0 auto;
+}
+
+.listbox{
+  display: inline-block;
+  width: 49%;
+}
+
+.listbox-label-from{
+  width: 3.5em;
+}
+
+.listbox-label-to{
+  width: 2em;
+}
+
+.result-label{
+  width: 20%;
+  display: inline-block;
+}
+
+.result-input{
+  width: 75%;
+  display: inline-block;
+}

@@ -1,0 +1,28 @@
+<div class="panel-body main-div">
+  <a ui-sref="transaction">Transaction</a>
+  <!-- <div ui-view=""></div> -->
+  <div class="listbox-group">
+    <div class="form-group listbox">
+      <label>Currency I have:</label>
+      <select name="rateFrom" id="rateFrom" class="form-control" ng-model="rate.from">
+        <option ng-repeat="(name, value) in rates" value="{{ name }}">{{ name }}</option>
+      </select>
+      <div class="form-group">
+        <label>Value:</label>
+        <input class="form-control" ng-model="rate.inputValue" />
+      </div>
+    </div>
+    <div class="form-group listbox">
+      <label>Currency I want:</label>
+      <select name="rateTo" id="rateTo" class="form-control" ng-model="rate.to">
+        <option ng-repeat="(name, value) in rates" value="{{ name }}">{{ name }}</option>
+      </select>
+      <div class="form-group">
+        <label>Result:</label>
+        <input class="form-control" ng-model="rate.result" />
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" ng-click="getRates()">Get Rates</button>
+  <button class="btn btn-primary" ng-click="rateConversion()">Convert</button>
+</div>

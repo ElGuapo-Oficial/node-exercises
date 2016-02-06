@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app/rates/rates.css"
+    <link rel="stylesheet" href="./app/transaction/transaction.css"
+  </head>
+
+  <body ng-app="ratesApp">
+    <div ui-view=""></div>
+
+    <!-- dependencies -->
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--  mine -->
+    <script src="./app/app.js"></script>
+    <script src="./app/rates/rates.js"></script>
+    <script src="./app/rates/rates.controller.js"></script>
+
+    <script src="./app/transaction/transaction.controller.js"></script>
+    <script src="./app/transaction/transaction.js"></script>
+  </body>
+</html>
